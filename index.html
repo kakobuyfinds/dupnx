@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>OopBuy spreadsheet – Kategorien, Größen und QC-Fotos</title>
+  <meta name="description" content="Deutschsprachiger Guide zum OopBuy spreadsheet mit zehn CAFANS-Kategorien und Tipps zu Produktlinks, Passform, QC-Fotos und Versandkosten.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="OopBuy spreadsheet – Kategorien, Größen und QC-Fotos">
+  <meta property="og:description" content="CAFANS-Kategorien entdecken und Produktlinks, Maße, QC-Fotos sowie Versandkosten vor dem Kauf prüfen.">
+  <style>
+    :root{color-scheme:light;--paper:#f8f5ee;--ink:#202332;--muted:#504f60;--accent:#433585;--line:#d8d2e0;--panel:#eee9fa}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    header,footer{padding:1rem 0;border-block-end:1px solid var(--line)}
+    footer{margin-top:3rem;border-block-start:1px solid var(--line);border-block-end:0}
+    header a,footer a{font-weight:750}
+    a{color:var(--accent);text-underline-offset:.2em}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    .hero{display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:clamp(1rem,4vw,4rem);padding-block:clamp(1.5rem,4vw,3.5rem)}
+    h1,h2,h3,p{margin:0}
+    h1,h2,h3{line-height:1.12}
+    h1{font-size:clamp(2.55rem,6.7vw,5.9rem);letter-spacing:-.06em;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.65rem,3vw,2.5rem);letter-spacing:-.035em}
+    h3{font-size:1.2rem}
+    p{margin-top:.65rem}
+    .lede{font-size:clamp(1rem,2vw,1.18rem);max-width:52ch}
+    .button{display:inline-block;margin-top:1rem;padding:.65rem 1rem;border-radius:.4rem;background:var(--accent);color:#fff;font-weight:700}
+    figure{margin:0}
+    img{display:block;width:100%;height:auto;background:#fff}
+    .hero img{aspect-ratio:4/3;object-fit:contain;border-radius:1rem}
+    figcaption,.note,footer{color:var(--muted);font-size:.9rem}
+    figcaption{padding:.4rem .6rem}
+    .categories{padding:1rem;background:var(--panel);border-radius:1rem}
+    .categories ul{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.5rem;padding:0;margin:1rem 0 0;list-style:none}
+    .categories a{display:flex;align-items:center;justify-content:space-between;gap:.35rem;height:100%;min-height:2.8rem;padding:.45rem .65rem;border:1px solid var(--line);border-radius:.4rem;background:var(--paper);font-weight:650;overflow-wrap:anywhere}
+    section+section{margin-top:2.75rem}
+    .gallery,.articles{display:grid;gap:.85rem;margin-top:1rem}
+    .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .gallery figure,.articles article{border:1px solid var(--line);border-radius:.7rem;overflow:hidden}
+    .gallery img{aspect-ratio:1;object-fit:contain}
+    .articles{grid-template-columns:repeat(2,minmax(0,1fr))}
+    article{padding:1rem}
+    .faq{max-width:76ch}
+    details{border-bottom:1px solid var(--line);padding:.55rem 0}
+    details:first-of-type{margin-top:.6rem}
+    summary{cursor:pointer;font-weight:750;padding:.35rem 0}
+    details p{margin:.2rem 0 .6rem}
+    @media(max-width:760px){.categories ul{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:560px){.hero,.articles{grid-template-columns:1fr}.hero img{aspect-ratio:2/1}}
+  </style>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","inLanguage":"de","mainEntity":[{"@type":"Question","name":"Was ist ein OopBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Ein OopBuy spreadsheet ist eine nach Kategorien sortierte Sammlung von Produktlinks. Es dient als Ausgangspunkt für die Recherche. Die Kategorie-Links auf dieser Seite führen zum Katalog von CAFANS."}},{"@type":"Question","name":"Was zeigen QC-Fotos?","acceptedAnswer":{"@type":"Answer","text":"QC-Fotos zeigen den fotografierten Artikel und sichtbare Details wie Nähte, Etiketten und Farbe. Sie ersetzen weder einen Herkunftsnachweis noch eine Prüfung der Echtheit."}},{"@type":"Question","name":"Wie prüfe ich die passende Größe?","acceptedAnswer":{"@type":"Answer","text":"Miss ein gut sitzendes Kleidungsstück flach aus und vergleiche dieselben Messpunkte mit der Größentabelle des Anbieters. Bei Schuhen hilft der Vergleich von Fußlänge und angegebener Innenlänge."}},{"@type":"Question","name":"Was zählt zum Gesamtpreis für eine Lieferung nach Deutschland?","acceptedAnswer":{"@type":"Answer","text":"Rechne mit dem Artikelpreis, dem Inlandsversand, dem internationalen Versand und den jeweils anfallenden Servicegebühren oder Einfuhrabgaben. Prüfe die Angaben für deine Lieferadresse vor der Zahlung."}}]}
+  </script>
+  <!--
+  Redaktionelle Recherche für index.html
+  Die Google-Ergebnisseite war nicht abrufbar. Die folgenden zehn Seiten
+  stammen aus verfügbaren Suchergebnissen und sind keine bestätigte Google-Rangliste.
+  1. oopspreadsheet.com — Produktsuche, Kategorien, Bestellschritte
+  2. opbuysheet.com — Kategorien für Kleidung, Schuhe und Accessoires
+  3. oopbuysupply.com — Anbieter, Bezugsquellen und Varianten
+  4. www.oocbuy.com/index.html — Kategorie-Navigation und Modellnamen
+  5. oopbuyy.com — Recherche, Artikelvergleich und QC
+  6. oopspreadsheet.com/how-to-use-spreadsheet/ — Produktlinks und Bedienung
+  7. oopbuydb.com — Größen, Angebotsprüfung, Lagerfotos und Versand
+  8. oopbuy.fit — Kategorien und Produktsuche
+  9. oopbuy.club — Begriff „Oopbuy spreadsheet“ im Seitentitel
+  10. oopbuy.com/notice/details?id=1739829963819945985 — Einkaufsablauf für Einsteiger
+  Empfohlene Nebenkeywords: OopBuy Produktlinks, OopBuy QC-Fotos,
+  OopBuy Versand nach Deutschland, OopBuy Größentabelle.
+  Long-Tail-Themen: Weidian-Produktlink prüfen, Taobao-Farbvariante vergleichen,
+  Mindestbestellmenge bei 1688 prüfen, Modellnummer beim Verkäufer abgleichen,
+  Lieferumfang vor Bestellung prüfen, Artikelnummer für Vergleich notieren,
+  Brustweite beim Hoodie messen, Ärmellänge beim Pullover vergleichen,
+  Schulterbreite bei Jacken messen, Bundweite bei Hosen vergleichen,
+  Innenbeinlänge bei Shorts messen, Fußlänge mit Innenlänge vergleichen,
+  QC-Fotos von Sneaker-Fersen prüfen, Laufsohle auf Lagerfotos vergleichen,
+  Detailfoto vom Etikett anfragen, Verschluss auf Fotos prüfen,
+  Herkunftsnachweis für Markenartikel prüfen, Rückgabebedingungen beim Verkäufer prüfen,
+  Volumengewicht beim Versand vergleichen, Versandkosten mit Schuhkarton kalkulieren,
+  Gesamtkosten einer Lieferung nach Deutschland, Einfuhrbedingungen für Österreich,
+  Versandkosten für die Schweiz prüfen, Servicegebühren vor Zahlung prüfen.
+  -->
+<link rel="canonical" href="https://kakobuyfinds.github.io/dupnx/">
+</head>
+<body>
+  <header><div class="wrap"><a href="https://www.cafans.com">CAFANS-Katalog</a></div></header>
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>OopBuy spreadsheet</h1>
+        <p class="lede">Ein OopBuy spreadsheet bündelt Produktlinks nach Kategorien. Dieser unabhängige Guide hilft dir, Angebote, Größen und Qualitätsfotos zu vergleichen. Die unten verlinkten Kategorien öffnen den CAFANS-Katalog.</p>
+        <a class="button" href="https://www.cafans.com">Katalog auf CAFANS öffnen</a>
+      </div>
+      <figure>
+        <img src="https://nikeclprod.vtexassets.com/arquivos/ids/160793/CW2288_111_A_PREM.jpg?v=637654399803530000" width="640" height="640" fetchpriority="high" loading="eager" alt="Weißer Nike Air Force 1 ’07 in der Seitenansicht">
+        <figcaption>Nike Air Force 1 ’07 · Beispielbild</figcaption>
+      </figure>
+    </div>
+    <section class="categories" aria-labelledby="categories">
+      <h2 id="categories">Kategorien auf CAFANS</h2>
+      <ul>
+        <li><a href="https://cafans.com/category-911-Shoes.html">Schuhe <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies &amp; Pullover <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-914-Jackets.html">Jacken <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Hosen &amp; Shorts <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-916-Headwear.html">Kopfbedeckungen <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-917-Sets.html">Sets <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Unterwäsche <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-919-Jersey.html">Trikots <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="gallery">
+      <h2 id="gallery">Mode und Accessoires im Detail</h2>
+      <p class="note">Die Markenbilder zeigen Modellbeispiele. Ob ein Artikel verfügbar ist, steht im jeweiligen Angebot.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Blaue Louis-Vuitton-Jeansjacke mit Monogramm und zwei Brusttaschen">
+          <figcaption>Louis Vuitton · Monogramm-Jeansjacke</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Beige-braune Gucci-Baseballkappe aus GG-Canvas">
+          <figcaption>Gucci · GG-Canvas-Kappe</figcaption>
+        </figure>
+        <figure>
+          <img src="https://adminapi.brandishkw.com/resources/products/2807/MainImage.jpg?quality=60&amp;v=811e35aa-395a-4f4a-ab16-e292047e985d&amp;w=700" width="700" height="700" loading="lazy" decoding="async" alt="Hermès-Clic-H-Armreif aus schwarzer Emaille mit silberfarbenem Verschluss">
+          <figcaption>Hermès · Clic-H-Armreif</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/B1446HOMMTD000_E06?%24default_GHC%24=&amp;bfc=on&amp;crop=424%2C159%2C1122%2C1281&amp;wid=480&amp;qlt=75" width="480" height="548" loading="lazy" decoding="async" alt="Silberfarbenes Dior-CD-Icon-Armband mit feinen Kettengliedern">
+          <figcaption>Dior · CD-Icon-Armband</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section aria-labelledby="guides">
+      <h2 id="guides">Ratgeber für die Produktauswahl</h2>
+      <div class="articles">
+        <article>
+          <h3>Produktlinks und Varianten prüfen</h3>
+          <p>Wenn du OopBuy Produktlinks aus einer geteilten Liste nutzt, öffne das aktuelle Angebot. Bei einem Weidian- oder Taobao-Produktlink sollten Modellnummer, Farbvariante und Lieferumfang übereinstimmen. Prüfe bei 1688 auch die Mindestbestellmenge. Notiere Verkäufer und Artikelnummer, wenn du mehrere Angebote vergleichen willst.</p>
+        </article>
+        <article>
+          <h3>Passform in Zentimetern vergleichen</h3>
+          <p>Vergleiche eine OopBuy Größentabelle oder die Maßangaben des Verkäufers mit einem Kleidungsstück, das dir passt. Beim Hoodie helfen Brustweite und Ärmellänge, bei der Jacke die Schulterbreite. Prüfe bei Hosen Bundweite und Innenbeinlänge. Vergleiche bei Sneakern die Fußlänge mit der angegebenen Innenlänge.</p>
+        </article>
+        <article>
+          <h3>OopBuy QC-Fotos beurteilen</h3>
+          <p>Bitte bei fehlenden Ansichten um ein Detailfoto von Etikett, Nähten oder Verschluss. Bei Sneakern helfen Bilder der Laufsohle und beider Fersen. Prüfe, ob die Lagerfotos zur gewählten Farbe und Größe passen. Kläre bei Markenartikeln den Herkunftsnachweis separat und lies die Rückgabebedingungen des Anbieters.</p>
+        </article>
+        <article>
+          <h3>OopBuy Versand nach Deutschland kalkulieren</h3>
+          <p>Vergleiche beim Versand das tatsächliche Paketgewicht mit dem Volumengewicht. Ein Schuhkarton kann den Platzbedarf erhöhen. Halte für deine Gesamtkosten den Warenwert, die Versandkosten und mögliche Servicegebühren fest. Prüfe für Österreich und die Schweiz die Kosten und Einfuhrbedingungen für die jeweilige Lieferadresse.</p>
+        </article>
+      </div>
+    </section>
+    <section class="faq" aria-labelledby="faq">
+      <h2 id="faq">Häufige Fragen</h2>
+      <details open><summary>Was ist ein OopBuy spreadsheet?</summary><p>Ein OopBuy spreadsheet ist eine nach Kategorien sortierte Sammlung von Produktlinks. Es dient als Ausgangspunkt für die Recherche. Die Kategorie-Links auf dieser Seite führen zum Katalog von CAFANS.</p></details>
+      <details open><summary>Was zeigen QC-Fotos?</summary><p>QC-Fotos zeigen den fotografierten Artikel und sichtbare Details wie Nähte, Etiketten und Farbe. Sie ersetzen weder einen Herkunftsnachweis noch eine Prüfung der Echtheit.</p></details>
+      <details open><summary>Wie prüfe ich die passende Größe?</summary><p>Miss ein gut sitzendes Kleidungsstück flach aus und vergleiche dieselben Messpunkte mit der Größentabelle des Anbieters. Bei Schuhen hilft der Vergleich von Fußlänge und angegebener Innenlänge.</p></details>
+      <details open><summary>Was zählt zum Gesamtpreis für eine Lieferung nach Deutschland?</summary><p>Rechne mit dem Artikelpreis, dem Inlandsversand, dem internationalen Versand und den jeweils anfallenden Servicegebühren oder Einfuhrabgaben. Prüfe die Angaben für deine Lieferadresse vor der Zahlung.</p></details>
+    </section>
+  </main>
+  <footer><div class="wrap">Unabhängiger Einkaufsratgeber · <a href="https://www.cafans.com">CAFANS</a></div></footer>
+</body>
+</html>
